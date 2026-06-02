@@ -1,0 +1,92 @@
+{
+<<<<<<< HEAD
+  "$schema": "https://github.com",
+  "logo": {
+    "source": "blackarch",
+    "position": "top",
+    "padding": {
+      "bottom": 1
+    }
+  },
+  "modules": [
+    // Верхняя линия без изменений
+    {
+      "type": "custom",
+      "format": "{#91}-------------------------------------------------------{#}"
+    },
+    // Все модули теперь сдвинуты ровно на 12 пробелов от левого края
+    {
+      "type": "host",
+      "key": " ",
+      "format": "            {#white}Host         Arch Linux x86_64{#}"
+    },
+    {
+      "type": "wm",
+      "key": " ",
+      "format": "            {#white}WM           vxwm (X11){#}"
+    },
+    {
+      "type": "terminal",
+      "key": " ",
+      "format": "            {#white}Terminal     alacritty{#}"
+    },
+    {
+      "type": "cpu",
+      "key": " ",
+      "format": "            {#white}CPU          Intel Xeon E5-2650 v2{#}"
+    },
+    {
+      "type": "uptime",
+      "key": " ",
+      "format": "            {#white}Uptime       {2}h {3}m{#}"
+    },
+    // Нижняя линия без изменений
+    {
+      "type": "custom",
+      "format": "{#91}-------------------------------------------------------{#}"
+    }
+  ]
+=======
+    "$schema": "https://github.com",
+    "logo": {
+        "source": "blackarch",
+        "padding": {
+            "top": 1,
+            "left": 2
+        }
+    },
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+        {
+            "type": "custom",
+            "format": "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        },
+        {
+            "type": "os",
+            "key": "│     OS     >",
+            "keyColor": "31"
+        },
+        {
+            "type": "shell",
+            "key": "│     SH     >",
+            "keyColor": "31"
+        },
+        {
+            "type": "wm",
+            "key": "│     WM     >",
+            "keyColor": "31"
+        },
+        {
+            "type": "terminal",
+            "key": "│     TERM   >",
+            "keyColor": "31"
+        },
+        {
+            "type": "custom",
+            "format": "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        }
+    ]
+>>>>>>> 3050be824cfcb157c8266dd31709c48aa7df5959
+}

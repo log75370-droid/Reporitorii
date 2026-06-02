@@ -1,0 +1,95 @@
+<<<<<<< HEAD
+configuration {
+    modi:                       "drun";
+    show-icons:                 true;
+    display-drun:               "drun";
+    drun-display-format:        "{name}";
+    font:                       "JetBrainsMono Nerd Font 11";
+}
+
+* {
+    /* Базовая монохромная палитра */
+    bg-col:      #0A0F1E;    /* Основной темный фон */
+    fg-col:      #E0E0E0;    /* Светло-серый текст для неактивных элементов */
+    fg-muted:    #505050;    /* Темно-серый цвет для подсказок и иконок */
+    
+    /* Акцентный красный цвет */
+    accent-red:  #DC143C;    
+    
+    background-color: transparent;
+    text-color:       @fg-col;
+}
+
+window {
+    width:            450px;
+    border:           1px;
+    border-color:     @fg-muted; /* Тонкая серая монохромная рамка */
+    border-radius:    8px;
+    padding:          15px;
+    background-color: @bg-col;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing:  15px;
+}
+
+inputbar {
+    children: [ prompt, entry ];
+    spacing:  10px;
+    padding:  5px;
+}
+
+prompt {
+    text-color: @fg-muted; /* Монохромная иконка поиска */
+}
+
+entry {
+    placeholder:        "Поиск...";
+    placeholder-color:  @fg-muted;
+    text-color:         @fg-col;
+}
+
+listview {
+    lines:        8;
+    columns:      1;
+    fixed-height: true;
+    spacing:      4px;
+}
+
+element {
+    padding:       8px;
+    border-radius: 6px;
+}
+
+/* Обычное невыбранное состояние (полный монохром) */
+/* Обычные нечетные строки */
+element normal.normal {
+    background-color: @bg-col;
+    text-color:       @fg-col;
+}
+
+/* Четные строки (теперь точно такие же, как нечетные) */
+element alternate.normal {
+    background-color: @bg-col;
+    text-color:       @fg-col;
+}
+
+/* Выбранное приложение (всегда красное) */
+element selected.normal {
+    background-color: @accent-red;
+    text-color:       @bg-col;
+}
+
+element-icon {
+    size:            24px;
+    text-color:      inherit;
+}
+
+element-text {
+    vertical-align:   0.5;
+    text-color:       inherit;
+}
+=======
+@theme "~/.config/rofi/red_black.rasi"
+>>>>>>> 3050be824cfcb157c8266dd31709c48aa7df5959

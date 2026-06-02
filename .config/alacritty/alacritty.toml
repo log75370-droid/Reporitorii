@@ -1,0 +1,102 @@
+<<<<<<< HEAD
+[terminal.shell]
+program = "/usr/bin/fish"
+args = ["--login"]
+
+[cursor]
+# Стиль курсора: Beam (вертикальная линия)
+style = "Beam"
+
+[font]
+# Используем точное имя семейства "Fira Code"
+normal = { family = "Fira Code", style = "Regular" }
+bold = { family = "Fira Code", style = "SemiBold" } # Для жирного текста
+italic = { family = "Fira Code", style = "Retina" }   # В Fira Code нет истинного курсива, Retina отлично заменит его
+
+# Размер шрифта (настройте под себя)
+size = 12.0
+
+[colors]
+# Базовые цвета терминала (Фон и Текст)
+primary.background = '#020101' # Экстремально темный, почти чистый черный фон
+primary.foreground = '#d3d3d3' # Светло-серый текст для отличной читаемости
+
+# Цвет выделения текста мышью и курсора
+selection.background = '#3a0000' # Слегка приглушенный темно-бордовый
+selection.text = '#ffffff'       # Белый текст при выделении
+cursor.cursor = '#8B0000'        # Темно-красный курсор
+
+# Обычные цвета (Normal)
+normal.black = '#100505'   # Глубокий черный с минимальным красным отливом
+normal.red = '#8B0000'     # Основной темно-красный (ZXC command)
+normal.green = '#550000'   # Глубокий темно-бордовый
+normal.yellow = '#a10000'  # Ключевые слова (бордово-красный)
+normal.blue = '#660000'    # Кавычки (темно-бордовый)
+normal.magenta = '#b80000' # Потоки вывода (пурпурно-красный)
+normal.cyan = '#4A0000'    # Автодополнение (очень темный красный)
+normal.white = '#d3d3d3'   # Стандартный белый/светло-серый
+
+# Яркие цвета для акцентов (Bright)
+bright.black = '#555555'   # Комментарии (серый)
+bright.red = '#ff4d4d'     # Ошибки (яркий алый)
+bright.green = '#880000'   # Светлый бордовый
+bright.yellow = '#ff3333'  # Яркий красный акцент
+bright.blue = '#aa0000'    # Насыщенный красный
+bright.magenta = '#ff6b6b' # Светло-розовый/красный
+bright.cyan = '#5A0000'    # Темный неоново-красный
+bright.white = '#ffffff'   # Чистый белый
+=======
+[window]
+padding = { x = 12, y = 12 }
+dynamic_title = true
+opacity = 1
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+
+[font]
+size = 11.0
+normal = { family = "JetBrainsMono NF", style = "Regular" }
+
+[colors.primary]
+background = '#181516'    # Глубокий темный (Noir) с легким винным отливом
+foreground = '#E5D4D6'    # Мягкий пастельно-белый с розовым оттенком
+bright_foreground = '#F7E7E9'
+
+[colors.cursor]
+text = '#181516'
+cursor = '#E297A1'        # Элегантный розовый курсор (Rose)
+
+[colors.selection]
+text = '#181516'
+background = '#4A3538'    # Приглушенный темно-бордовый для выделения текста
+
+[colors.normal]
+black = '#261F21'
+red = '#C35A6B'
+green = '#6B8F71'
+yellow = '#D4A373'
+blue = '#7D9BB2'
+magenta = '#E297A1'      # Основной акцентный розовый
+cyan = '#8CBDBA'
+white = '#E5D4D6'
+
+[colors.bright]
+black = '#3D3134'
+red = '#D97384'
+green = '#82A388'
+yellow = '#E6B88A'
+blue = '#93AFC4'
+magenta = '#F3B0BA'      # Яркий неоново-розовый для подсветки
+cyan = '#A1D0CC'
+white = '#F7E7E9'
+
+[colors.dim]
+black = '#1F191A'
+red = '#994452'
+green = '#547059'
+yellow = '#A87F58'
+blue = '#5F798C'
+magenta = '#B3747E'
+cyan = '#6D9694'
+white = '#B3A4A6'
+>>>>>>> 3050be824cfcb157c8266dd31709c48aa7df5959
